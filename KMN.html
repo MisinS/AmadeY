@@ -1,0 +1,60 @@
+<meta charset="utf-8">
+<script>
+alert ('1-так , 2-ні')
+var point = 0
+var kmn = prompt('Граєм КМН?')
+if (kmn == 1) {
+	alert ('1-Кімінь , 2-ножниці , 3-бумага')
+	var win = prompt ('Введи свій вибір')
+	alert ('Кімінь , ножниці , бумага!')
+	var bot1 = ((Math.round(Math.random() * 3)))
+	var bot2 = ((Math.round(Math.random() * 3)))
+	while (bot1 == 0){
+		bot1++
+		
+	}
+	while (bot2 == 0){
+		bot2++
+		}
+	     if  ((win == 1) && (bot1 == 2) && (bot2 == 2)) {
+		
+		alert ('Ти переміг!')
+		point++;
+		alert ('У бота1 було...'+ bot1)
+		alert ('У бота2 було...'+ bot2)
+	}
+
+
+	    
+	             if ((win == 2) && (bot1 == 3) && (bot2 == 3)) {
+		           alert('Ти переміг!')
+		           point++;
+		           alert ('У бота1 було...'+ bot1)
+		alert ('У бота2 було...'+ bot2)
+	                }
+                         	if  ((win == 3) && (bot1 == 1) && (bot2 == 1)) {
+	                                	alert('Ти переміг!')
+	                                	point++;
+	                                	alert ('У бота1 було...'+ bot1)
+		alert ('У бота2 було...'+ bot2)
+                                 }
+		if ((kmn == bot1) &&(kmn == bot2)) {
+			alert('Нічія!')
+			alert ('У бота1 було...'+ bot1)
+		alert ('У бота2 було...'+ bot2)
+		}
+
+	                                          
+	else {
+		alert('Ти програв!')
+		alert ('У бота1 було...'+ bot1)
+		alert ('У бота2 було...'+ bot2)
+	
+	}
+}
+
+if (kmn == 2) {
+	alert('Ну і не треба!');
+
+}
+</script>
